@@ -32,6 +32,15 @@ def reduce_to_all_true(source_array)
   false  
 end 
 
+def reduce_to_all_true(source_array)
+  source_array.each do |value|
+    if value == false  
+      return false  
+    end
+  end
+  true   
+end 
+
 
 
 
